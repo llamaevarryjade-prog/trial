@@ -1,0 +1,379 @@
+html {
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+body{
+    font-family: monospace;
+    cursor: default;
+    margin: 0;
+    background-color: rgb(172, 172, 185);
+    background-image: linear-gradient(rgba(50, 50, 50, 0.40),rgba(50, 50, 50, 0.40)), url(../images/PLAZA-2_waifu2x_noise0_scale2x.png);  
+    background-size: 100% auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.logo{
+    position: absolute;
+    height: 100px;
+    left: 0;
+    margin-left: 100px;
+    width: 100px;
+    border-radius: 950px;
+    display: flex;
+    
+   
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 96%;
+    display: flex;
+    margin-top: 0px;
+    padding: 10px;
+    padding-right: 50px; 
+    justify-content: flex-end;
+    align-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 1.7em;
+    font-family: 'Belanosima', sans-serif;      
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #f7faf7; 
+  text-align: center; 
+  animation: green-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes green-glow {
+  from {
+    text-shadow: 0 0 5px #c8f1c8, 0 0 10px #c8f1c8;
+  }
+  to {
+    text-shadow: 0 0 10px #afe1af, 0 0 20px #afe1af, 0 0 30px #afe1af, 0 0 40px #90ee90;
+  }
+}
+
+
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
+    padding: 10px 18px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+
+.title h1 {
+  color: rgb(11, 11, 11);
+  font-family: 'Jacques Francois Shadow';
+  font-size: 150px;                                            
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1;
+  text-shadow: 2px 2px 4px #000000;
+  animation: float 5s ease-in-out infinite,
+             glow 5s ease-in-out infinite alternate; 
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue, 0 0 30px #0073e6, 0 0 50px #0073e6;
+  }
+  50% {
+    text-shadow: 0 0 20px aliceblue, 0 0 30px aliceblue, 0 0 40px #0073e6, 0 0 60px #0073e6; /* Maximum glow */
+  }
+  100% {
+    text-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue, 0 0 30px #0073e6, 0 0 50px #0073e6; /* Return to initial glow */
+  }
+}
+.title h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+     font-family: 'Freshener', sans-serif;
+                                                
+  animation: green-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes green-glow {
+  from {
+    text-shadow: 0 0 5px #c8f1c8, 0 0 10px #c8f1c8;
+  }
+  to {
+    text-shadow: 0 0 10px #afe1af, 0 0 20px #afe1af, 0 0 30px #afe1af, 0 0 40px #90ee90;
+  }
+}
+                                                
+
+
+.design{
+    color: rgb(1, 6, 15);
+    text-align: center;
+    
+}
+.design a{
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 32px;
+    display: inline-block;
+}
+
+.tplace{
+    scroll-margin-top: 80px; 
+}
+
+.tplace a{
+        text-decoration: none;
+}
+
+.tplace h1{
+    font-family: 'f Finish';
+    background-color: #85BCC7; 
+    color: #333; 
+    padding: 10px; 
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px; 
+    text-align: center;
+    margin-top: 400px;
+    font-size: 40px;
+        text-shadow: 
+        2px 2px 0 #000,
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+          color: #0a0a0a; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+ animation: float 5s ease-in-out infinite;
+    
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* The starting and ending position */
+    }
+    50% {
+        transform: translateY(-20px); /* The mid-way position */
+    }
+}
+
+.places {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image {
+    width: 300px;
+    position: relative;
+    margin: 70px;
+    margin-top: 10px;
+
+    /* Add the background box styles here */
+    background-color: #333; /* A dark color for the box background */
+    border-radius: 16px;    /* Match the border-radius of the image */
+    padding: 15px;          /* Add spacing inside the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.places img {
+    /* Existing styles */
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    width: calc(100% - 100%);
+    height: 200px;
+    padding: 0;
+    box-shadow: 5px 5px 10px 0 #85BCC7;
+    border-radius: 16px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.content {
+    /* ... (rest of your .content styles) ... */
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 10px;
+    line-height: .5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: #000000;
+}
+
+.content:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 150px 50px 1px rgba(11, 12, 3, 0.3);
+}
+
+.places .image:hover img {
+    filter: brightness(0.5);
+}
+
+.product .image:hover img {
+    filter: brightness(0.5);
+}
+
+.content h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(222, 6, 6);
+    text-shadow: 20px 20px 20px rgb(188, 200, 22);
+}
+
+.content p {
+    color: white;
+    text-shadow: 0 0 20px rgb(191, 183, 28);
+}
+
+.tproduct{
+    scroll-margin-top: 80px;
+}
+
+.tproduct h1{
+    font-family: 'f Finish';
+    background-color: #85BCC7; 
+    color: #333; 
+    padding: 10px; 
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px; 
+    text-align: center;
+    margin-top: 400px;
+    font-size: 40px;
+        text-shadow: 
+        2px 2px 0 #000,
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+          color: #0a0a0a; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+
+
+.product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.product img{
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    width: calc(100% - 100%);
+    height: 200px;
+    padding: 0px;
+    box-shadow: 5px 5px 10px 10px #85BCC7;
+    border-radius: 16px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.footer {
+    color: rgb(249, 248, 248);
+    padding: 1px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nagan-ili {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tag-line {
+    font-size: 0.9em;
+    color: #fbf8f8;
+    margin-bottom: 15px;
+}
+
+
+.about-link {
+    color: rgb(16, 8, 2);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 3px 10px;
+    border: 3px solid rgb(3, 1, 0);
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.about-link:hover {
+    background-color:#85BCC7; 
+    color: white;
+}
+
+.footer-copyright {
+    border-top: 5px solid #060704; 
+    padding-top: 5px;
+    font-size: 1.1em;
+    background: black;
+    color: #f9f6f6;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+

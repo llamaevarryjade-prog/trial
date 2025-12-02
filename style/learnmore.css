@@ -1,0 +1,202 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Unbounded', sans-serif;                           
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.header {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #004d40;
+    color: white;
+}
+
+.header h1 {
+ /* Styling for the animated header text */
+
+  /* Set a base color for the text */
+  color: #ffffff; /* A light, pastel green for the main text color */
+  text-align: center; /* Center the text */
+  
+  /* Apply the glowing effect with animation */
+  animation: green-glow 2s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the glowing animation */
+@keyframes green-glow {
+  from {
+    /* Subtle glow at the start of the animation */
+    text-shadow: 0 0 5px #afe1af, 0 0 10px #afe1af;
+  }
+  to {
+    /* More intense glow at the end of the animation */
+    text-shadow: 0 0 10px #afe1af, 0 0 20px #afe1af, 0 0 30px #afe1af, 0 0 40px #90ee90;
+  }
+}
+
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: url('../images/PLAZA-2_waifu2x_noise0_scale2x.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+     
+    height: 80px;
+    left: 0;
+    width: 80px;
+    border-radius: 950px;
+ 
+    
+   
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+   font-family: 'Surprisedmonkey', sans-serif;                        
+/* Styling for the animated header text */
+
+  /* Set a base color for the text */
+  color: #545854; /* A light, pastel green for the main text color */
+  text-align: center; /* Center the text */
+  
+  /* Apply the glowing effect with animation */
+  animation: green-glow 2s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the glowing animation */
+@keyframes green-glow {
+  from {
+    /* Subtle glow at the start of the animation */
+    text-shadow: 0 0 5px #afe1af, 0 0 10px #afe1af;
+  }
+  to {
+    /* More intense glow at the end of the animation */
+    text-shadow: 0 0 10px #afe1af, 0 0 20px #afe1af, 0 0 30px #afe1af, 0 0 40px #90ee90;
+  }
+}
+
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #ffb300; 
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Content Sections */
+.section {
+    background-color: white;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    border-bottom: 3px solid #ffb300; /* A bright, celebratory yellow-orange */
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #004d40; /* A deep, rich green */
+}
+
+.section p, .section ul {
+    font-size: 1.1em;
+}
+
+/* Festival Highlights */
+.fiesta-highlight {
+    background-color: #fff8e1; /* Lighter background for emphasis */
+    border-left: 5px solid #c72c41; 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.fiesta-highlight h3 {
+    color: #c72c41; 
+    margin-top: 0;
+}
+
+.fiesta-highlight ul {
+    padding-left: 20px;
+}
+
+.fiesta-highlight li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.PAA{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #004d40; 
+    color: white;
+    border-radius: 8px;
+}

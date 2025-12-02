@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgb(1, 1, 11);
+   
+}
+
+.logo{
+    position: absolute;
+    height: auto;
+    left: 0;
+    margin-left: 90px;
+    width: 71px;
+    border-radius: 950px;
+    
+}
+
+.navbar{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    width: 96%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 50px; 
+    justify-content: flex-end;
+    align-content: space-around;
+    margin: 0%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(34, 22, 22);
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 30px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+}
+
+.navbar ul li a:hover{
+    background: rgb(34, 22, 22);
+    color: rgb(246, 247, 248);
+    padding: 10px 30px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+
+.section{
+    background-color: rgb(34, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 3rem auto;
+    border-radius: 16px;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Existing styles */
+.section img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 50%;
+  padding-left: 20px;
+  transition: all 0.5s ease-in-out; /* Add transition for a smooth effect */
+}
+
+/* Define the keyframes for the glow and subtle pulse animation */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(133, 188, 199, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(133, 188, 199, 1);
+    transform: scale(1.05); /* Slightly enlarge the image */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(133, 188, 199, 0.5);
+    transform: scale(1);
+  }
+}
+
+/* Apply the continuous animation to the image */
+.section img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 50%;
+  padding-left: 20px;
+  
+  /* Apply the animation here */
+  animation: pulse-glow 1.5s infinite;
+}
+
+
+
+.section p{
+    font-family: monospace;
+    color: rgb(244, 244, 246);
+    padding-left: 40px;
+    font-size: 15px ;
+    line-height: 1.5;
+    text-indent: 30px;
+    backdrop-filter: blur(3px);
+}
+
+.text h1 {
+    color: aliceblue;
+    text-align: center;
+ animation: float 5s ease-in-out infinite;
+    
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* The starting and ending position */
+    }
+    50% {
+        transform: translateY(-20px); /* The mid-way position */
+    }
+}
+
+figcaption {
+    color: beige;
+    margin-left: 60px;
+    font-size: 20px;
+    
+    /* Apply the glowing text effect */
+    text-shadow: 0 0 5px beige, 0 0 10px beige;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the glowing animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px beige, 0 0 10px beige;
+  }
+  to {
+    text-shadow: 0 0 10px beige, 0 0 20px beige, 0 0 30px beige;
+  }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color:white;
+    color: rgb(18, 9, 9);
+    border-radius: 8px;
+}
